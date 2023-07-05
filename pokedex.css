@@ -1,0 +1,179 @@
+
+:root {
+    --c-grass: #46d1b0;
+    --c-fire: #fc6c6c;
+    --c-water: #59acf8;
+    --c-bug: #a17973;
+    --c-normal: #A8A77A;
+    --c-poison: #7c538b;
+    --c-electric: #ffcf49;
+    --c-ground: #b0756d;
+    --c-fairy: #D685AD;
+    --c-fighting: #C22E28;
+    --c-psychic: #F95587;
+    --c-rock: #B6A136;
+    --c-ground: #E2BF65;
+    --c-ghost: #735797;
+    --c-ice: #96D9D6;
+    --c-dark: #705746;
+    --c-steel: #B7B7CE;
+    --c-dragon: #6F35FC;
+    --c-flying: #97ccfd;
+}
+
+/*allgemeine einstellungen*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-image: url(img/main_background.jpg);
+    background-attachment: fixed;
+}
+
+
+.headerIMG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin: 20px;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+
+.headerIMG img{
+    height: 100px;
+}
+
+.d_none{
+    display: none !important;
+}
+
+/*ladebereich*/
+
+#card_container{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* einzelne pokemonkarten*/
+
+.card_small{
+    width: 280px;
+    height: 280px;
+    padding: 24px;
+    border: 5px solid #fff;
+    margin: 24px;
+    border-radius: 30px;
+    font-weight: bolder;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 1.4rem;
+    transition: 0.255s;
+}
+
+.card_small:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.fronticon{
+    width: 150px;
+    height: 150px;
+}
+
+/*Detail_Bereich*/
+
+#specs_container{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+/*specs Karten*/
+
+.specs_card{
+    width: 600px;
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+}
+
+.specs_header{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #6F35FC;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.specs_header_left{
+    padding: 30px;
+}
+
+.specs_body{
+    background-color: white;
+    width: 100%;
+    height: 400px;
+    margin-top: -40px;
+    border-radius: 40px;
+}
+
+.specs_nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.nav_icons{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.DetailMiddle{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.DetailPic{
+    width: 300px;
+    height: 300px;
+}
+
+/*hintergrund*/
+
+.backgroundpic{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
